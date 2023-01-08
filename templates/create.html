@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+
+
+{% block title %}Create{% endblock %}
+
+{% block body %}
+<div class="container-fluid text-center">
+    <ul>
+<h1>
+    <li style="display: inline;"><a href="{{url_for('home')}}"><button type="button" class="btn btn-secondary">Home Page</button> </a></li>
+<li style="display: inline;"><a href="{{url_for('students')}}"><button type="button" class="btn btn-secondary">Student list</button> </a></li>
+</h1></ul></div>
+
+
+<div id="border" style="border:3px solid black; border-radius:30px;" class="container my-4 ">
+    <h2 class="my-2 px-2 text-center">Student Registration Form</h2>
+    <div class="container-fluid my-4 px-4">
+      <form action="{{url_for('insert')}}" method="POST">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label >Name</label>
+        <input type="text" class="form-control" name="name" required="1" ></input>
+          </div>
+          <div class="form-group col-md-6">
+            <label >Branch:</label>
+        <input type="text" class="form-control" name="branch" required="0" ></input>
+          </div>
+        </div>
+               
+        
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label >Semester1:</label>
+        <input type="number" class="form-control" name="semester1" required="1" ></input>
+              </div> 
+            <div class="form-group col-md-3">
+                <label >Semester2:</label>
+        <input type="number" class="form-control" name="semester2" required="1" ></input>
+              </div> 
+          <div class="form-group col-md-3">
+            <label >Semester3:</label>
+        <input type="number" class="form-control" name="semester3" required="1" ></input>
+          </div> 
+          <div class="form-group col-md-3">
+            <label >Semester4:</label>
+        <input type="number" class="form-control" name="semester4" required="1" ></input>
+        </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label >Semester5:</label>
+        <input type="number" class="form-control" name="semester5" required="1" ></input>
+              </div> 
+          <div class="form-group col-md-3">
+            <label >Semester6:</label>
+        <input type="number" class="form-control" name="semester6" required="1" ></input>
+          </div> 
+          <div class="form-group col-md-3">
+            <label >Semester7:</label>
+        <input type="number" class="form-control" name="semester7" required="1" ></input>
+        </div>
+          <div class="form-group col-md-3">
+            <label >Semester8:</label>
+        <input type="number" class="form-control" name="semester8" required="1" ></input>
+        </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <button class="btn btn-primary" type="submit">Add Student</button>
+      </div>
+
+{% endblock %}
