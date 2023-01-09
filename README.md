@@ -1,4 +1,4 @@
-# AmitSoni_Python_Project_Flask
+# AmitSoni_Python_Flask_Student_Exam_Management_Project
 Python Flask Student Exam Management Project . URL: http://127.0.0.1:5000/ For Home Page .
 There are Two Button on Home Page One For Create Student and Another for Showing the list of the Students .  
 This Project Uses Methods POST and GET.
