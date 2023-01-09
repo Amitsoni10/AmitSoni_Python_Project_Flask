@@ -25,3 +25,32 @@ Pagination is also Done
 Sorting Button is also given to sort the Data by the name
 
 ![sort](https://user-images.githubusercontent.com/120723916/211255205-493231ab-dff9-4e91-a91c-67d6c27c3912.png)
+<hr>
+<h2> Usage </h2>
+
+```
+  from flask import Flask,render_template,request,redirect,url_for,flash
+  from flask_sqlalchemy import SQLAlchemy
+  @app.route("/")
+  #returns homepage
+  @app.route("/create")
+  #return student registration page
+  @app.route('/students',methods=['GET','POST'])
+  #returns student list page
+  @app.route('/insert',methods = ['POST'])
+  #for adding the students data in registration form
+  @app.route('/update',methods = ['GET','POST'])
+  #for updating the data
+  @app.route('/delete/<id>/', methods =['GET','POST'])
+  #for deleting the data
+  @app.route("/sort")
+  #returns sorted list
+```
+<h2> Deployment </h2>
+
+If you want to deploy this application in our local system we need to follow this below steps<br>
+1. We need to download python and any IDE and the modules in it as per required.<br>
+2. Then need to pull the code and execute it in the system.
+
+
+
