@@ -1,8 +1,6 @@
-
 These are the versions used in this project
 
 python version -- 3.11.0
 flask version --- 2.2.2
 jinja2------------3.1.2
 SQLAlchemy--------1.4.45
-Werkzeug--------- 2.2.2
